@@ -3,17 +3,20 @@ Basic server/client program to issue remote commands over DHCP
 
 Utilizes unreserved Option Header 181 to transmit data.
 
-## Instructuctions
-Server side
+# Instructions
 
-   Run the DHCP.py script. 
+- Server side
 
-   This will start the DHCP server and the listener will create a window where you can see DHCP DORAI packets in real time. 
+  - Run the arpspoof.py script to spoof
 
-   Make sure to edit the Options Headers.
+  - Run the DHCP.py script. 
 
-Client-Side
+  - This will start the DHCP server and the listener will create a window where you can see DHCP DORAI packets in real time. 
 
-   Run DHCPSniffer.py. 
+  - Make sure to edit the Options Headers.
 
-   This will use SCAPY to sniff for DHCP packets and append option 181 to an executable .bat file in a specified directory
+- Client-Side
+
+  - Run DHCPSniffer.py. 
+
+  - This will use SCAPY to sniff for DHCP packets and append option 181 to an executable .bat file in a specified directory
